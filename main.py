@@ -15,8 +15,8 @@ current_card = {}
 def remove_card():
     to_learn.remove(current_card)
     print(len(to_learn))
-    df2 = pandas.DataFrame(to_learn)
-    df2.to_csv("./data/words_to_learn.csv", index=False)
+    df3 = pandas.DataFrame(to_learn)
+    df3.to_csv("./data/words_to_learn.csv", index=False)
     next_card()
 
 
